@@ -17,9 +17,11 @@ then
 			continue
 		fi
 	done
-	echo "${1} not found"
+	echo "${1} not is found"
+	return 1
 else
-echo "need params"
+	echo "need params"
+	return 1
 fi
 
 }
